@@ -1,15 +1,15 @@
 const config = {
-  siteTitle: "Belf", // Site title.
-  siteTitleShort: "Belf", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "Belf - the one and only!", // Alternative site title for SEO.
+  siteTitle: "Belfi", // Site title.
+  siteTitleShort: "Belfi", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleAlt: "Belfi - the one and only!", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://belf.netlify.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://belfi.tk", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "Belf - the biggest leader in area of creativity!", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "Belfi - the biggest leader in area of creativity!", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
-  siteRssTitle: "Belf RSS feed", // Title of the RSS feed
+  siteRssTitle: "Belfi RSS feed", // Title of the RSS feed
   siteFBAppID: "", // FB Application ID for using app insights
-  googleAnalyticsID: "UA-47311644-5", // GA tracking ID.
+  googleAnalyticsID: "UA-180540767-1", // GA tracking ID.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
   postsPerPage: 4, // Amount of posts displayed per listing page.
@@ -38,7 +38,7 @@ const config = {
       iconClassName: "fa fa-envelope"
     }
   ],
-  copyright: "Copyright © 2020. Admin, BELF", // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2020. Admin, BELFI", // Copyright string for the footer of the website and RSS feed.
   themeColor: "#c62828", // Used for setting manifest and progress theme colors.
   backgroundColor: "#e0e0e0" // Used for setting manifest background color.
 };
