@@ -1,0 +1,38 @@
+@import "./src/styles/config";
+
+.link {
+  text-decoration: none !important;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  padding: to-rem(14px) to-rem(28px);
+  font-size: to-rem(16px);
+  text-align: center;
+  min-width: to-rem(230px);
+  border-radius: to-rem(30px);
+  transition: $transition-base;
+
+  &.solid {
+    background: color("gold");
+    border: to-rem(2px) solid color("gold");
+    color: color("coal");
+
+    @include hover-focus {
+      background: transparent;
+      color: color("white");
+    }
+  }
+
+  &.outlined {
+    background: color("black");
+    border: to-rem(2px) solid color("white");
+    color: color("white");
+
+    @include hover-focus {
+      border: to-rem(2px) solid color("gold");
+      color: color("gold");
+    }
+  }
+
+}
+

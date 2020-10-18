@@ -1,0 +1,25 @@
+{
+  "general": {
+    "site_name": "Kashooon"
+  },
+  "header": {
+    "nav": {
+      "services": {
+        "content": "Services",
+        "title": "Services | All kinds of services - shipping, handling.."
+      },
+      "products": {
+        "content": "Products",
+        "title": "Products | Highest quality products.."
+      },
+      "standards": {
+        "content": "Standards",
+        "title": "Standards | All about standards.."
+      }
+    }
+  },
+  "main_page": {
+    "slogan": "A real leader in cardboard boxes production industry."
+  },
+  "footer": {}
+}

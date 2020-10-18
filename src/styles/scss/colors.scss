@@ -1,0 +1,18 @@
+$black: #000;
+$coal: #222;
+$white: #fff;
+$gold: gold;
+$old-gold: #d4af37;
+//$gold: #FA9719;
+
+$colors: (
+  "black": $black,
+  "coal": $coal,
+  "white": $white,
+  "gold": $gold,
+  "old-gold": $old-gold,
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}

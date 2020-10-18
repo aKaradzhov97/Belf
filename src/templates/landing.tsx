@@ -1,36 +1,33 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
-import Layout from "../layout";
+import { Layout } from "../layout";
 import PostListing from "../components/PostListing/PostListing";
+import { SEO } from "../components/SEO/SEO";
 import config from "../../data/SiteConfig";
 
-export default class CategoryTemplate extends React.Component {
+class Landing extends React.Component {
   render() {
-    const { category } = this.props.pageContext;
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout>
-        <div className="category-container">
-          <Helmet
-            title={`Posts in category "${category}" | ${config.siteTitle}`}
-          />
-          <PostListing postEdges={postEdges} />
+        <div className="landing-container">
+          <div className="posts-container">
+            <Helmet title={config.siteTitle} />
+            <SEO />
+            <PostListing postEdges={postEdges} />
+          </div>
         </div>
       </Layout>
     );
   }
 }
 
-/* eslint no-undef: "off" */
+export default Landing;
+
 export const pageQuery = graphql`
-  query CategoryPage($category: String) {
-    allMarkdownRemark(
-      limit: 1000
-      sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { category: { eq: $category } } }
-    ) {
-      totalCount
+  query LandingQuery {
+    allMarkdownRemark(sort: { fields: [fields___date], order: DESC }) {
       edges {
         node {
           fields {
